@@ -1,0 +1,8 @@
+-r requirements-api.txt
+matplotlib
+seaborn
+xgboost
+scipy
+notebook
+openpyxl
+python-docx

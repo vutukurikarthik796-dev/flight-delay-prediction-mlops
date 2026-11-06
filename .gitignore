@@ -1,9 +1,16 @@
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
+.ipynb_checkpoints/
 mlruns/
 *.db
-.ipynb_checkpoints/
 
+# Large datasets and generated artifacts
 data/flights.csv
 artifacts/splits.pkl
+
+# Local environment and logs
+.env
+.env.*
+*.log

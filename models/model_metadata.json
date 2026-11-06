@@ -1,0 +1,21 @@
+{
+  "project": "Flight Delay Prediction",
+  "artifact": "flight_delay_final_model.pkl",
+  "classifier": "DecisionTreeClassifier inside scikit-learn Pipeline",
+  "target": "DELAYED",
+  "target_rule": "1 when ARRIVAL_DELAY > 15 minutes; otherwise 0",
+  "features": [
+    "MONTH",
+    "DAY",
+    "DAY_OF_WEEK",
+    "AIRLINE",
+    "ORIGIN_AIRPORT",
+    "DESTINATION_AIRPORT",
+    "SCHEDULED_TIME",
+    "DISTANCE",
+    "DEP_HOUR",
+    "DEP_MINUTE",
+    "DEP_PERIOD"
+  ],
+  "serialized_sklearn_version": "1.9.0"
+}

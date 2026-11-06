@@ -1,0 +1,18 @@
+FLIGHT DELAY PREDICTION PROJECT — START HERE
+===========================================
+
+EASIEST WAY TO RUN ON WINDOWS
+1. Extract this ZIP to a folder. The included flights.csv is large, so extraction may take time.
+2. Open the extracted Flight-Delay-Prediction-Runnable folder.
+3. Double-click run_api.bat. The first run installs dependencies and may take a few minutes.
+4. When the server starts, open http://127.0.0.1:8000/docs
+5. Expand POST /predict, click Try it out, use the sample JSON in README.md, then click Execute.
+
+HEALTH CHECK: http://127.0.0.1:8000/health
+API DOCUMENTATION: http://127.0.0.1:8000/docs
+
+STOP SERVER: Press Ctrl+C in the terminal window.
+
+The API predicts whether arrival delay will exceed 15 minutes. It loads the included saved model; you do not need to train the model just to make predictions. Python package installation requires internet access. Python 3.11 is recommended because the model was serialized with scikit-learn 1.9.0.
+
+To run the original analysis notebook, open notebooks/flight_delay_analysis.ipynb in VS Code/Jupyter and install optional packages using: python -m pip install -r requirements-notebook.txt
